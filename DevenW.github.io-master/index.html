@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<link href="./style.css" rel="stylesheet" type="text/css"/>
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">Develop branch <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+  <img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" class="trump"/>
+  <h1>Another test font</h1>
+</div>
