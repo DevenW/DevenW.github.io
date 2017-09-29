@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
+!<!DOCTYPE html>
+<html>
+
+<style>
+
+h1 {
+  font-family: "Times New Roman";
+  font-style: italic;
+}
+
+</style>
 
 <link href="./style.css" rel="stylesheet" type="text/css"/>
 
@@ -20,8 +31,10 @@ layout: default
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">Develop branch <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">Master branch <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-  <a href="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" class="trump"</a>
-    <h1>Another test font</h1>
+  <img src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" class="trump"/>
+  <h1>Another test font</h1>
 </div>
+
+</html>
