@@ -25,3 +25,8 @@
   height: 50px;
   style: inline;
 }
+
+nav {
+  position: fixed;
+  color: #aea6dd;
+}
