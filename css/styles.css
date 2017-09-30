@@ -1,14 +1,13 @@
-.trump {
-  border-radius: 5px;
+.home {
+  color: #5841e0;
+  font-family: "Century Gothic", sans-serif;
+  border: 10px;
+  padding: 20px;
 }
 
-h1 {
-  font-family: "Garamond";
-  font-style: italic;
-  color: skyblue;
-}
-
-p {
-  font-size: 30px;
-  color: blue;
+.Youtube {
+  color: #5841e0;
+  font-family: "Century Gothic", sans-serif;
+  border: 10px;
+  padding: 20px;
 }
