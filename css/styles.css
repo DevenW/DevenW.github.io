@@ -7,3 +7,8 @@ h1 {
   font-style: italic;
   color: red;
 }
+
+p {
+  font-size: 30px;
+  color: blue;
+}
