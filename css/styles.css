@@ -6,6 +6,7 @@
   padding: 20px;
   text-align: center;
   margin: auto;
+  position: relative;
 }
 
 .Youtube {
@@ -16,4 +17,5 @@
   padding: 20px;
   text-align: center;
   margin: auto;
+  position: relative;
 }
