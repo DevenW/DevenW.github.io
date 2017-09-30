@@ -3,29 +3,14 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
-<head>
-<style>
+  <head>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <div class="home">
 
-h1 {
-  font-family: "Times New Roman";
-  font-style: italic;
-}
+    <h1 class="page-heading">Posts</h1>
 
-.trump {
-  border-color: red;
-  border-width: 10px;
-  border-radius: 20px;
-}
-
-</style>
-
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
+    <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -35,12 +20,11 @@ h1 {
         </h2>
       </li>
     {% endfor %}
-  </ul>
+    </ul>
 
-  <p class="rss-subscribe">Master branch <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="rss-subscribe">Master branch <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-  <img class="trump" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" />
-  <h1>Lit dab</h1>
-</div>
-
+    <img class="trump" src="http://i2.cdn.cnn.com/cnnnext/dam/assets/170712202623-02-donald-trump-0712-exlarge-169.jpg" />
+    <h1>Haha I now have full control</h1>
+  </div>
 </html>
