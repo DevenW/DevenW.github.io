@@ -1,3 +1,4 @@
+/*
 .home {
   color: #5841e0;
   font-family: "Century Gothic", sans-serif;
@@ -29,4 +30,29 @@
 nav {
   position: fixed;
   color: #aea6dd;
+}
+*/
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #5841e0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
 }
