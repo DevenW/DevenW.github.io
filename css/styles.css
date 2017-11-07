@@ -1,8 +1,6 @@
 .home {
   color: #5841e0;
   font-family: "Century Gothic", sans-serif;
-  border: 10px;
-  border-color: #5841e0;
   padding: 20px;
   text-align: center;
   margin: auto;
@@ -15,10 +13,8 @@
 }
 
 .Youtube {
-  color: black;
+  color: #5841e0;
   font-family: "Century Gothic", sans-serif;
-  border: 10px;
-  border-color: #5841e0;
   padding: 20px;
   text-align: center;
   margin: auto;
