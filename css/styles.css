@@ -57,7 +57,7 @@ li a {
     */
     text-decoration: none;
     font-family: 'Raleway' , sans-serif;
-    font-size: 28px;
+    font-size: 200%;
 }
 
 li a:hover {
