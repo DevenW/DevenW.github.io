@@ -59,6 +59,53 @@ body, html {
   color: #e1efe9;
   animation-name: fadeInDown;
   animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+
+.content ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(128, 128, 128, 0.25);
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+.content li a {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 300%;
+  font-weight: 100;
+  color: #e1efe9;
+  display: inline;
+  text-decoration: none;
+}
+
+.content li a:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+}
+
+.home {
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.YouTube {
+  animation-name: fadeInDown;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 
 /* Youtube page code */
