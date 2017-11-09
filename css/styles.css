@@ -41,7 +41,9 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
+    /*
     background-color: #f3f3f3;
+    */
 }
 
 li {
@@ -60,6 +62,12 @@ li a {
 
 li a:hover {
     background-color: #ddd;
+}
+
+.titlepage {
+  height: 100%;
+  width: 100%;
+  background-image: url("C:\Users\wildc\Documents\WebsiteRepo\pexels-photo-414171.jpeg");
 }
 
 /* Youtube page code */
