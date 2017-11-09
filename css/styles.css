@@ -16,6 +16,22 @@
   animation-name: "fadeInDown";
 }
 
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
 body, html {
   height: 100%;
   margin-top: 0px;
@@ -59,25 +75,22 @@ body, html {
   color: #e1efe9;
   animation-name: fadeInDown;
   animation-duration: 2s;
-  animation-delay: 1s;
+  animation-delay: .5s;
   animation-fill-mode: both;
 }
 
-.content ul {
+.content ul li {
+  white-space: nowrap;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  background-color: rgba(128, 128, 128, 0.25);
-  animation-name: fadeInDown;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
+  display: inline-block;
+  max-width: none;
+  max-height: none;
 }
 
 .content li a {
   font-family: 'Raleway' , sans-serif;
-  font-size: 300%;
+  font-size: 200%;
   font-weight: 100;
   color: #e1efe9;
   display: inline;
@@ -89,23 +102,49 @@ body, html {
 }
 
 .home {
-  animation-name: fadeInDown;
+  animation-name: fadeInLeft;
   animation-duration: 1.5s;
-  animation-delay: 2s;
+  animation-delay: 2.5s;
   animation-fill-mode: both;
   display: inline;
   padding-left: 10px;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .YouTube {
-  animation-name: fadeInDown;
+  animation-name: fadeInLeft;
   animation-duration: 1.5s;
   animation-delay: 2s;
   animation-fill-mode: both;
   display: inline;
-  padding-left: 20px;
-  padding-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.about {
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 40px;
 }
 
 /* Youtube page code */
+
+.tubetitle {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+}
+
+/* About me page code here */
+
+.description {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+}
