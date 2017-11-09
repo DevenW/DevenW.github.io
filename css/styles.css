@@ -1,70 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
 
-/*
-.home {
-  color: #5841e0;
-  font-family: "Century Gothic", sans-serif;
-  padding: 20px;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  width: 225px;
-  height: 50px;
-  style: inline;
-  box-sizing: border-box;
-  display: inline-block;
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-.Youtube {
-  color: #5841e0;
-  font-family: "Century Gothic", sans-serif;
-  padding: 20px;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  width: 275px;
-  height: 50px;
-  style: inline;
-  box-sizing: border-box;
-  display: inline-block;
+.fadeInDown {
+  animation-name: "fadeInDown";
 }
 
-nav {
-  position: fixed;
-  color: #aea6dd;
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    border: 1px solid #e7e7e7;
-    /*
-    background-color: #f3f3f3;
-
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: #5841e0;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Raleway' , sans-serif;
-    font-size: 200%;
-}
-
-li a:hover {
-    background-color: #ddd;
-}
-*/
 body, html {
   height: 100%;
   margin-top: 0px;
@@ -106,6 +57,8 @@ body, html {
   font-size: 600%;
   font-weight: 100;
   color: #e1efe9;
+  animation-name: fadeInDown;
+  animation-duration: 2s;
 }
 
 /* Youtube page code */
