@@ -32,6 +32,38 @@
   animation-name: fadeInLeft;
 }
 
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
 body, html {
   height: 100%;
   margin-top: 0px;
@@ -192,18 +224,39 @@ body, html {
 
 /* About me page code here */
 
-.description {
+.about-text {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+  position: absolute;
+}
+
+.about-text p {
   font-family: 'Raleway' , sans-serif;
-  font-size: 275%;
+  font-size: 200%;
   font-weight: 100;
   color: #e1efe9;
-  position: absolute;
-  top: 0;
-  margin-top: 20%;
-  vertical-align: middle;
-  background-color: rgba(105, 105, 105, 0.5);
-  padding: 10px;
+  display: inline;
+  text-decoration: none;
   text-align: center;
+}
+
+.about-paragraph {
+  background-color: rgba(105, 105, 105, 0.5);
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15%
+  border: 1px solid #e1efe9;
+  border-radius: 7px;
+  padding: 10px;
+  animation-name: bounceInUp;
+  animation-duration: 1.25s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
 }
 
 .about-background {
@@ -212,10 +265,9 @@ body, html {
   margin: auto;
   display: table;
   top: 0;
-  background-size: cover;
   display: inline-table;
   filter: blur(5px);
-  position: relative;
+  background: no-repeat;
 }
 
 .about-text h1 {
@@ -229,7 +281,7 @@ body, html {
   animation-fill-mode: both;
   max-width: none;
   margin: 0 auto;
-  position: absolute;
+  position: relative;
   text-align: center;
   padding-top: 10%;
   top: 0;
