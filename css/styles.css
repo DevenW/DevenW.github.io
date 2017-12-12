@@ -222,6 +222,47 @@ body, html {
   color: #e1efe9;
 }
 
+.title {
+    position: relative;
+    background: red;
+    text-align: center;
+}
+
+.diagonal {
+    z-index: 1;
+    padding: 3em;
+        transform: rotate(-3deg);
+}
+
+.diagonal-content {
+  position: absolute;
+  transform: rotate(3deg);
+}
+
+.diagonal-title {
+  position: absolute;
+  transform: rotate(3deg);
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+  text-align: center;
+}
+
+.diagonal::before {
+    transform-origin: 3% 0;
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+}
+
+footer.diagonal {
+  background: grey;
+}
+
 /* About me page code here */
 
 .about-text {
