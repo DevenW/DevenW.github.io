@@ -227,6 +227,8 @@ body, html {
   background-position: 100% 0;
   background-size: 200% 100%;
   transition: all .25s ease-in;
+  top: 50px;
+  display: inline-block;
 }
 
 .back:hover {
@@ -244,6 +246,7 @@ body, html {
 
 .wildcat {
     text-align: center;
+    top: 125px;
     position: relative;
     background: purple;
     height: 150px;
@@ -260,11 +263,12 @@ body, html {
 .diagonal-youtube {
   position: relative;
   transform: rotate(3deg);
+  top: 200px;
 }
 
 .diagonal-wildcat {
   position: absolute;
-  top: 200px;
+  top: 60px;
   transform: rotate(3deg);
   font-family: 'Raleway' , sans-serif;
   font-size: 600%;
@@ -272,7 +276,13 @@ body, html {
   color: #e1efe9;
 }
 
-
+.youtube {
+  text-align: center;
+  top: 750px;
+  position: relative;
+  width: 150%;
+  left: -43%
+}
 
 footer.diagonal {
   background: grey;
