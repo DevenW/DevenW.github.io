@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: "fadeInDown";
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes bounceInUp {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, -20px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInUp {
+  animation-name: bounceInUp;
+}
+
+body, html {
+  height: 100%;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
+}
+
+.background-image {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+  display: inline-table;
+  filter: blur(5px);
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.content {
+  max-width: none;
+  margin: 0 auto;
+  position: absolute;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.content h1 {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: both;
+}
+
+.content ul {
+  margin-right: 30px;
+}
+
+.content ul li {
+  white-space: nowrap;
+  list-style-type: none;
+  overflow: hidden;
+  display: inline-block;
+  max-width: none;
+  max-height: none;
+  text-align: center;
+}
+
+.content li a {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 200%;
+  font-weight: 100;
+  color: #e1efe9;
+  display: inline;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+
+}
+
+/*
+.content ul li a:hover {
+  background-color: rgba(128, 128, 128, 0.5);
+  background-position: -99.99% 0;
+}
+*/
+
+.home {
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 2.5s;
+  animation-fill-mode: both;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: linear-gradient(to left,  transparent,
+  transparent 50%,   rgba(105, 105, 105, 0.5) 50%,     rgba(105, 105, 105, 0.5));
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  border-radius: 7px;
+  border: 1px solid #e1efe9;
+  margin-right: 10px;
+}
+
+.home:hover {
+  background-position: 0 0;
+  color:#333;
+}
+
+.YouTube {
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-image: linear-gradient(to left,  transparent,
+  transparent 50%,   rgba(105, 105, 105, 0.5) 50%,     rgba(105, 105, 105, 0.5));
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  border-radius: 7px;
+  border: 1px solid #e1efe9;
+}
+
+.YouTube:hover {
+  background-position: 0 0;
+  color:#333;
+}
+
+
+.about {
+  animation-name: fadeInLeft;
+  animation-duration: 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: 0.5s;
+  background-image: linear-gradient(to left,  transparent,
+  transparent 50%,   rgba(105, 105, 105, 0.5) 50%,     rgba(105, 105, 105, 0.5));
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  border-radius: 7px;
+  border: 1px solid #e1efe9;
+  margin-left: 10px;
+}
+
+.about:hover {
+  background-position: 0 0;
+}
+
+/* Youtube page code */
+
+.backtube {
+  padding: 10px;
+  font-family: 'Raleway' , sans-serif;
+  text-decoration: none;
+  color: purple;
+  border: 1px solid;
+  border-radius: 5px;
+  background-image: linear-gradient(to left,  transparent,
+  transparent 50%,   rgba(105, 105, 105, 0.5) 50%,     rgba(105, 105, 105, 0.5));
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  top: 50px;
+  display: inline-block;
+}
+
+.backtube:hover {
+  background-position: 0 0;
+  color:#333;
+}
+
+.tubetitle {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+  padding: 10px;
+}
+
+.wildcat {
+    text-align: center;
+    top: 125px;
+    position: relative;
+    background: purple;
+    height: 150px;
+    width: 150%;
+    left: -43%
+}
+
+.diagonal {
+    z-index: 1;
+    padding: 3em;
+        transform: rotate(-3deg);
+}
+
+.diagonal-youtube {
+  position: relative;
+  transform: rotate(3deg);
+  top: 200px;
+}
+
+.diagonal-wildcat {
+  position: absolute;
+  top: 60px;
+  transform: rotate(3deg);
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+}
+
+.youtube {
+  text-align: center;
+  top: 750px;
+  position: relative;
+  width: 150%;
+  left: -43%
+}
+
+footer.diagonal {
+  background: grey;
+}
+
+/* About me page code here */
+
+.about-text {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+  top: 0;
+  background-size: cover;
+  position: absolute;
+}
+
+.about-text p {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 200%;
+  font-weight: 100;
+  color: #e1efe9;
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+}
+
+.about-paragraph {
+  background-color: rgba(105, 105, 105, 0.5);
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 15%
+  border: 1px solid #e1efe9;
+  border-radius: 7px;
+  padding: 10px;
+  animation-name: bounceInUp;
+  animation-duration: 1.25s;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+}
+
+.about-background {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: table;
+  top: 0;
+  display: inline-table;
+  filter: blur(5px);
+  background: no-repeat;
+}
+
+.about-text h1 {
+  font-family: 'Raleway' , sans-serif;
+  font-size: 600%;
+  font-weight: 100;
+  color: #e1efe9;
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: both;
+  max-width: none;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding-top: 10%;
+  top: 0;
+  display: table;
+  width: 100%;
+}
+
+.backabout {
+  padding: 10px;
+  font-family: 'Raleway' , sans-serif;
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+  border-radius: 5px;
+  background-image: linear-gradient(to left,  transparent,
+  transparent 50%,   rgba(105, 105, 105, 0.5) 50%,     rgba(105, 105, 105, 0.5));
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  top: 50px;
+  display: inline-block;
+}
+
+.backabout:hover {
+  background-position: 0 0;
+  color:#grey;
+}
